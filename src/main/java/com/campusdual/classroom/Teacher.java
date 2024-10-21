@@ -8,4 +8,9 @@ public class Teacher extends Person {
 		super(name, surname);
 		this.area = area;
 	}
+
+	@Override
+	public String getDetails() {
+		return "Teacher: " + name + " " + surname + ", area " + area.toLowerCase();
+	}
 }
